@@ -1,13 +1,11 @@
-FROM node:12
+FROM node:12-alpine
 
 WORKDIR /app
 
-COPY yarn.lock package.json ./
+COPY . .
 
-RUN yarn
+RUN yarn install --frozen-lockfile
 
 RUN yarn build
 
-COPY . .
-
-CMD ["node", "build/index.js"]
+ENTRYPOINT ["node", "build/index.js"]
