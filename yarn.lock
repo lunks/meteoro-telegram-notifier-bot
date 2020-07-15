@@ -4511,10 +4511,10 @@ telegram-typings@^3.6.0:
   resolved "https://registry.yarnpkg.com/telegram-typings/-/telegram-typings-3.6.1.tgz#1288d547f8694b61f1c01c2993e295f3114d9e25"
   integrity sha512-njVv1EAhIZnmQVLocZEADYUyqA1WIXuVcDYlsp+mXua/XB0pxx+PKtMSPeZ/EE4wPWTw9h/hA9ASTT6yQelkiw==
 
-telegram-youtube-notifier@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/telegram-youtube-notifier/-/telegram-youtube-notifier-1.0.1.tgz#7537f4e02ef3f50b4e32f5d883de55442f2d58df"
-  integrity sha512-MQJBxlnUZBTKxp+KLnO/yekvlVICW2DmuDgcD8q4zHGpyhIiKJ4dct2NkQiiZ6g6URhHOSNWxO3kduLc9XZJYw==
+telegram-youtube-notifier@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/telegram-youtube-notifier/-/telegram-youtube-notifier-1.0.2.tgz#48b47b988f83936b678d30d901861aaa5793a83f"
+  integrity sha512-H1OojFulfIH/jjcEJFNBfBaz5Ivg97DVIOD/9azTRvGTQebiCpsjOlCRitMKXiwX5FbBakhPqYgs1i5iI6vBCA==
   dependencies:
     davefeedread "^0.5.14"
     feedparser "^2.2.10"
