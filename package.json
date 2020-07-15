@@ -27,6 +27,6 @@
     "typescript": "^3.9.6"
   },
   "dependencies": {
-    "telegram-youtube-notifier": "^1.0.2"
+    "telegram-youtube-notifier": "^1.0.4"
   }
 }
