@@ -50,6 +50,9 @@ jobs:
     - name: Terraform Format
       run: terraform fmt -check
 
+    - name: Terraform Taint (docker image has changed)
+      run: terraform taint vm_instance
+
     - name: Terraform Plan
       run: terraform plan
 
