@@ -1,11 +1,11 @@
 terraform {
   backend "remote" {
     # The name of your Terraform Cloud organization.
-    organization = var.organization
+    organization = "lunks"
 
     # The name of the Terraform Cloud workspace to store Terraform state files in.
     workspaces {
-      name = var.workspace
+      name = "meteoro-telegram-notifier-bot"
     }
   }
 }

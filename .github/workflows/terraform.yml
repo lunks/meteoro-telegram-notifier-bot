@@ -1,9 +1,5 @@
 name: 'Terraform'
 
-env:
-  TF_VAR_ORGANIZATION: "lunks"
-  TF_VAR_WORKSPACE: "meteoro-telegram-notifier-bot"
-
 on:
   push:
     branches:
