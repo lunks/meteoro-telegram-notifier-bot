@@ -1,3 +1,15 @@
+terraform {
+  backend "remote" {
+    # The name of your Terraform Cloud organization.
+    organization = var.organization
+
+    # The name of the Terraform Cloud workspace to store Terraform state files in.
+    workspaces {
+      name = var.workspace
+    }
+  }
+}
+
 provider "google" {
   credentials = var.google_credentials
   project     = var.project_id
@@ -5,7 +17,7 @@ provider "google" {
 }
 
 module "gce-container" {
-  source = "terraform-google-modules/container-vm/google"
+  source  = "terraform-google-modules/container-vm/google"
   version = "~> 2.0"
 
   container = {
