@@ -1,5 +1,13 @@
 name: 'Workflow'
 
+env:
+  TF_VAR_instance_name: ${{ secrets.INSTANCE_NAME }}
+  TF_VAR_message_prefix: ${{ secrets.MESSAGE_PREFIX }}
+  TF_VAR_project_id: ${{ secrets.PROJECT_ID }}
+  TF_VAR_telegram_chat_ids: ${{ secrets.TELEGRAM_CHAT_IDS }}
+  TF_VAR_telegram_token: ${{ secrets.TELEGRAM_TOKEN }}
+  TF_VAR_youtube_channel_id: ${{ secrets.YOUTUBE_CHANNEL_ID }}
+
 on:
   push:
     branches:
