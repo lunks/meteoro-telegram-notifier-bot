@@ -4,8 +4,10 @@ WORKDIR /app
 
 COPY . .
 
+RUN apk add --no-cache tini
+
 RUN yarn install --frozen-lockfile
 
 RUN yarn build
 
-ENTRYPOINT ["node", "build/index.js"]
+ENTRYPOINT [ "/sbin/tini","--", "node", "build/index.js" ]
