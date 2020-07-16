@@ -51,7 +51,7 @@ jobs:
       run: terraform fmt -check
 
     - name: Terraform Taint (docker image has changed)
-      run: terraform taint vm_instance
+      run: terraform taint google_compute_instance.vm_instance
 
     - name: Terraform Plan
       run: terraform plan
